@@ -1,3 +1,4 @@
-const API_URL = 'https://api.github.com/repos/sahanr/street-fighter/contents/fighters.json';
+import App from './src/javascript/app';
+import './src/styles/styles.css';
 
-fetch(API_URL);
+new App();
