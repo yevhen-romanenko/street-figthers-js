@@ -1,26 +1,29 @@
+
+
 class Fighter {
     
     constructor (name, health, attack, defense){
-        const MIN_NUMBER = 1;
-        const MAX_NUMBER = 2;
+        
         this.name = name;
         this.health = health;
         this.attack = attack;
         this.defense = defense;
     }
     
-    getRandom(min, max) {
-        return Math.floor(Math.random() * max) + min;
-    }
-    
-    getHitPower(){
-        return power = attack * getRandom(MIN_NUMBER, MAX_NUMBER);
-    }
-
-    getBlockPower(){
-        return power = defense * getRandom(MIN_NUMBER, MAX_NUMBER);
+    getHitPower(attack){
+        let criticalHitChance = (Math.floor(Math.random() * 2) + 1);
+        let power = attack * criticalHitChance ;
+        return power;
+        
     }
 
+    getBlockPower(defense){
+        let dodgeChance = (Math.floor(Math.random() * 2) + 1);
+        let power = defense * dodgeChance;
+        return power;
+    }
+        
 }
+
 
 export default Fighter;

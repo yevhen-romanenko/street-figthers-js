@@ -1,5 +1,6 @@
 import FightersView from './fightersView';
 import { fighterService } from './services/fightersService';
+import Fighter from './fighter';
 
 class App {
     constructor() {
@@ -25,6 +26,7 @@ class App {
         App.loadingElement.style.visibility = 'hidden';
       }
     }
+
 }
 
 export default App;
