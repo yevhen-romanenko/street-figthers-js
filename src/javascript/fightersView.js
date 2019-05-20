@@ -13,7 +13,7 @@ class FightersView extends View {
       
       
       const firstFighter = new Fighter('Ryu',  45,  4, 3);
-      const secondFighter = new Fighter("Guile", 45, 4, 3);
+      const secondFighter = new Fighter("Zangief", 60, 4, 1);
       
       try{
         fight(firstFighter,secondFighter);

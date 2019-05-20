@@ -18,8 +18,9 @@ function fight(enemy, defender) {
         let damage = attack-defence;
         if (damage < 0) {
             damage = 0;
-            console.log('dodge!');
+            console.log('dodge!')
         }
+        
         
         defender.health -= damage;
         
@@ -64,7 +65,7 @@ function fight(enemy, defender) {
       function endGame(winner, loser) {
         console.log('\n======== GAME OVER ========');
         console.log(winner.name + " wins against " + loser.name + " with " + winner.health + " health remaining!");
-        //process.exit(0);
+        process.exit(0);
       }
     
 
